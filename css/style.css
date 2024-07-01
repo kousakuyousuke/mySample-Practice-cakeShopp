@@ -1,0 +1,398 @@
+@charset "UTF-8";
+/*----- 共通部分 -----*/
+body {
+  font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+  font-size: 100%;
+  letter-spacing: 0.05em;
+  color: #3c301e;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.inner {
+  padding: 0 40px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*----- header -----*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(241, 238, 228, 0.25);
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+}
+
+.header-nav {
+  margin-top: 10px;
+}
+
+.header-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+.header-nav-list a {
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav-link {
+  color: #fff;
+  font-size: 16px;
+}
+
+ul li a {
+  display: block;
+  color: #fff;
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+#toggle {
+  position: relative;
+}
+
+.toggle-list {
+  display: none;
+  width: 96px;
+  position: absolute;
+  top: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*----- about -----*/
+.about {
+  padding: 40px 0;
+  background-color: #f1eee4;
+}
+
+.section-heading-main {
+  display: block;
+  font-size: 40px;
+}
+
+.section-heading-sub {
+  display: block;
+  font-size: 12px;
+}
+
+.about-text-contents {
+  margin-top: 20px;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.about-text + .about-text {
+  margin-top: 16px;
+}
+
+/*----- menu -----*/
+.menu {
+  background-color: #f1eee4;
+  padding: 80px 0;
+}
+
+.menu-text-contents {
+  text-align: center;
+  padding: 16px 10px;
+}
+
+.menu-name-main {
+  display: block;
+  font-size: 18px;
+}
+
+.menu-name-sub {
+  display: block;
+  font-size: 12px;
+  margin-top: 8px;
+  color: #a98c5f;
+}
+
+.menu-text {
+  font-size: 14px;
+  margin-top: 16px;
+  color: #a98c5f;
+}
+
+.menu-item + .menu-item {
+  margin-top: 62px;
+}
+
+/*--- モーダル ---*/
+.modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.modal__bg {
+  background: rgba(100, 100, 100, 0.9);
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+
+.modal__content {
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+/*----- shop -----*/
+.shop {
+  background-image: url(../img/sp/bg-shop.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.shop-inner {
+  padding: 0 20px;
+}
+
+.section-heading-l {
+  color: #fff;
+}
+
+.shop-text {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.form {
+  margin-top: 40px;
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 14px;
+  border: none;
+  font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.form-submit {
+  display: block;
+  margin: 10px auto 0;
+  padding: 12px 10px;
+  width: 120px;
+  border-radius: 4px;
+  font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+  border: none;
+  background-color: #a98c5f;
+  color: #fff;
+}
+
+/*----- footer -----*/
+.footer {
+  background-color: #3c301e;
+  text-align: center;
+  padding-top: 46px;
+  color: #fff;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer-nav-list {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+  padding: 0 20px;
+  padding-bottom: 46px;
+}
+
+.sns-img {
+  width: 56px;
+}
+
+.footer-nav-link-text {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.footer-copy-wrapper {
+  border-top: 1px solid rgba(241, 238, 228, 0.25);
+  padding: 12px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+}
+
+#js-pagetop {
+  position: fixed;
+  z-index: 99;
+  bottom: 32px;
+  right: 32px;
+  cursor: pointer;
+}
+
+#js-pagetop a {
+  background: #fff;
+  color: #3c301e;
+  font-size: 13px;
+  display: block;
+  padding: 23px 8px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/*----- PC、タブレット -----*/
+@media screen and (min-width: 768px) {
+  /*----- header -----*/
+  .header {
+    padding: 16px;
+  }
+  .header-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .header-logo {
+    margin: 0;
+  }
+  .header-nav-list {
+    gap: 40px;
+  }
+  .header-nav-link {
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  .header-nav-link:hover {
+    opacity: 0.7;
+  }
+  /*----- about -----*/
+  .about {
+    padding: 100px 0;
+  }
+  .inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .section-heading-main {
+    font-size: 64px;
+  }
+  .about-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-img {
+    width: 300px;
+  }
+  .about-text-contents {
+    margin-top: 0;
+  }
+  .about-text {
+    font-size: 15px;
+  }
+  .about-text + .about-text {
+    margin-top: 30px;
+  }
+  /*----- menu -----*/
+  .menu {
+    padding: 0 0 100px;
+  }
+  .menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .menu-item + .menu-item {
+    margin-top: 0;
+  }
+  /*--- モーダル ---*/
+  .modal__content {
+    width: 60%;
+    padding: 8px;
+  }
+  /*----- shop -----*/
+  .shop {
+    background-image: url(../img/bg-shop.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 0;
+  }
+  .shop-inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  .form-submit {
+    margin-top: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  .form-submit:hover {
+    opacity: 0.7;
+  }
+  /*----- footer -----*/
+  .footer-text {
+    margin-top: 12px;
+  }
+  .footer-nav-list {
+    gap: 40px;
+  }
+  .footer-copyright {
+    font-size: 13px;
+  }
+}
